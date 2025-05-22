@@ -1,0 +1,32 @@
+{
+  "employee": [
+    {
+      "id": 2,
+      "name": "ashu",
+      "doj": "2016-06-13T18:30:00.000Z",
+      "role": "Lead",
+      "salary": 40000
+    },
+    {
+      "id": 3,
+      "name": "jay bhagat",
+      "doj": "2025-04-30T18:30:00.000Z",
+      "role": "Manager",
+      "salary": 50000
+    },
+    {
+      "id": 4,
+      "name": "charvik ",
+      "doj": "2025-01-27T18:30:00.000Z",
+      "role": "Opertor",
+      "salary": 20000
+    },
+    {
+      "id": 5,
+      "name": "janki",
+      "doj": "2025-04-30T18:30:00.000Z",
+      "role": "Manager",
+      "salary": 30000
+    }
+  ]
+}

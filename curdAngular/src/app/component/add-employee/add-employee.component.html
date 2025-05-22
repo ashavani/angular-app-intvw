@@ -1,0 +1,46 @@
+<form [formGroup]="empForm" (ngSubmit)="SaveEmployee()">
+<mat-card>
+    <mat-card-header>
+        <h2>{{title}}</h2>
+    </mat-card-header>
+    <mat-card-content>
+
+        <mat-form-field>
+            <mat-label>Employee Id</mat-label>
+            <input matInput formControlName="id">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Employee Name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Salary</mat-label>
+            <input matInput formControlName="salary">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Date of Joining</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="doj">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Emp Role</mat-label>
+            <mat-select formControlName="role">
+                <mat-option value="">Please select Role</mat-option>
+                <mat-option value="Manager">Manager</mat-option>
+                <mat-option value="Lead">Lead</mat-option>
+                <mat-option value="Opertor">Opertor</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </mat-card-content>
+    <mat-card-actions>
+        <button type="submit" mat-raised-button color="primary">Save</button>
+        <a mat-raised-button color="accent" (click)="closePopup()">Close</a>
+    </mat-card-actions>
+</mat-card>
+</form>
